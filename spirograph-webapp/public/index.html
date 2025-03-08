@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interaktiver Spirograph</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interaktiver Spirograph</h1>
+  <div class="controls">
+    <div>
+      <label for="bigRadius">Großer Radius (R): <span id="bigRadiusValue">150</span></label>
+      <input type="range" id="bigRadius" min="50" max="300" value="150">
+    </div>
+    <div>
+      <label for="smallRadius">Kleiner Radius (r): <span id="smallRadiusValue">50</span></label>
+      <input type="range" id="smallRadius" min="10" max="150" value="50">
+    </div>
+    <div>
+      <label for="penDistance">Abstand (d): <span id="penDistanceValue">70</span></label>
+      <input type="range" id="penDistance" min="0" max="200" value="70">
+    </div>
+  </div>
+  <canvas id="spiroCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
